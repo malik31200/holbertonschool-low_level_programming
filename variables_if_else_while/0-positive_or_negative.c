@@ -5,7 +5,7 @@
 /**
  * main - prints if n is negative, zero or positive
  *
- * return:Alwawys (Success)
+ * Return:Always (Success)
  */
 
 int main(void)
