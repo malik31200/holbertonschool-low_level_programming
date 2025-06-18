@@ -7,3 +7,5 @@
 6 - Write a program that prints all single digit numbers of base 10 starting from 0 whitout use char
 7  - Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 8  - Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
+
+9 - Write a program that prints all possible combinations of single-digit numbers.
