@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet- lowercase fois ten  Make a alphabet
+ * print_alphabet_x10- lowercase fois ten  Make a alphabet
  * Description : Function that print the alphabet
  * Return: void
  */
