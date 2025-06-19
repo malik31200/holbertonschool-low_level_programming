@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * prints alphabet lowercase
+ * prints_alphabet lowercase - Make a alphabet
  *
- * Return: void.
+ * Return: void
  */
 
 void print_alphabet(void)
