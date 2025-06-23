@@ -2,7 +2,7 @@
 
 /**
  * print_line - Function that draws line in the terminal
- * Description : Function that draws line
+ * @n : number of times the character _
  * Return: void
  */
 void print_line(int n)
