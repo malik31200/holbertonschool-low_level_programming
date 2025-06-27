@@ -5,7 +5,7 @@
  *@dest: is a string
  *@src: is a string that appends to the dest string
  *Descritption: Appends the src string to the dest string
- *Return result
+ *Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
