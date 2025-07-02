@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strstrk - Function searches a string
+ *_strpbrk - Function searches a string
  *@s: is a string
  *@accept: is a string
  *Return: s or NULL
