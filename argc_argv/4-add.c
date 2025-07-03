@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
-	int a = 1;
+	int a = 0;
 
 	if (argc == 1)
 	{
