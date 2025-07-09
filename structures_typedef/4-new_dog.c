@@ -12,6 +12,17 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = '\0';
 		return (dest);
 }
+int _strlen (char *str)
+{
+	int len = 0;
+	int i;
+
+	for ( i = 0; str[i] != '\0'; i++)
+	{
+		len++;
+	}
+	return (len);
+}
 /**
  * new_dog - Creates a new dog
  * @name: of dog
