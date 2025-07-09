@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include "dog.h"
 #include <string.h>
+/**
+ * _strcpy - Copy src in the dest
+ * @dest: is string to copy into
+ * @src: string copied
+ * Return: dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
@@ -12,12 +18,17 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = '\0';
 		return (dest);
 }
-int _strlen (char *str)
+/**
+ * _strlen - calculate the length of string
+ * @str: is a string
+ * Return: the length
+ */
+int _strlen(char *str)
 {
 	int len = 0;
 	int i;
 
-	for ( i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		len++;
 	}
