@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 /**
  *  _calloc - Function that allocates memory for an array
