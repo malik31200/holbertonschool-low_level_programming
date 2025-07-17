@@ -29,6 +29,7 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				ptrf[j](list);
 				separator = ", ";
+				break;
 			}
 
 			j++;
