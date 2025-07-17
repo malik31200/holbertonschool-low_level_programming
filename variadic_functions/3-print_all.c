@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 
 	va_start(list, format);
-	while (format[i] != '\0' && format != NULL)
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (format_array[j] != '\0')
