@@ -37,3 +37,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	last->next = newnode;
 	return (*head);
 }
+/**
+ *_strlen - Calculate Lengh of a string
+ *@str: is a string
+ *Return: len
+ */
+unsigned int _strlen(const char *str)
+{
+	unsigned int len = 0;
+
+	if (str == NULL)
+	{
+		return (0);
+	}
+	for (len = 0; str[len] != '\0'; len++)
+		;
+	return (len);
+}
