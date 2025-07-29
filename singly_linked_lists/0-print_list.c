@@ -1,5 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stddef.h>
+
 /**
  * print_list - Print all the elements of a list
  * @h: is a pointer of list_t (linked list)
@@ -10,10 +12,6 @@ size_t print_list(const list_t *h)
 	size_t count = 0;
 	const list_t *toprint = h;
 
-	if (h == NULL)
-	{
-		return (0);
-	}
 	while (toprint != NULL)
 	{
 		if (toprint->str == NULL)
