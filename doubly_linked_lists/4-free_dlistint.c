@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *free_list - Frees a doubly list
+ *free_dlistint - Frees a doubly list
  *@head: is a head of elements
  *Return: NULL
  */
