@@ -6,8 +6,8 @@
 
 /**
  * read_textfile - Function that reads a text file and prints
- * @filename: is a file
- * @letters: is the text
+ * @filename: is the file to read
+ * @letters: is the numbers of letters
  * Return: 0 is NULL or return the actual number of letters
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *temp;
 
 	fd = open(filename, O_RDONLY);
-	if (filename == NULL)
+	if (fd == -1)
 	{
 		return (0);
 	}
