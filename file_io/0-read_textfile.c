@@ -12,7 +12,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, count;
+	int fd, rcount, wcount;
 	char *temp;
 
 	if (filename == NULL)
@@ -30,15 +30,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	count = read(fd, temp, letters);
-	if (count == -1)
+	rcount = read(fd, temp, letters);
+	if (rcount == -1)
 	{
 		free(temp);
 		close(fd);
 		return (0);
 	}
-	count = write(1, temp, count);
-	if (count == -1)
+	wcount = write(1, temp, rcount);
+	if (wcount == -1 || wcount != rcount)
 	{
 		free(temp);
 		close(fd);
@@ -46,5 +46,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	free(temp);
 	close(fd);
-	return (count);
+	return (wcount);
 }
