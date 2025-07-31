@@ -9,18 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
+	if (argc != 3)
 	{
-		int res;
-
-		if (argc != 3)
-		{
-			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-			exit(97);
-		}
-		res = cp_file_from(argv[1], argv[2]);
-		printf("-> %i)\n", res);
-		return (0);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
 	}
+	cp_file_from(argv[1], argv[2]);
+	return (0);
 }
 #include <stdio.h>
 #include <fcntl.h>
