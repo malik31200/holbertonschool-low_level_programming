@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * main - check the code
  *@argc: is a number of argument
@@ -23,7 +22,6 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 }
-
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -40,7 +38,6 @@ int cp_file_from(const char *file_from, const char *file_to)
 	char buffer[1024];
 
 	fd_from = open(file_from, O_RDONLY);
-
 	if (fd_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
@@ -58,6 +55,7 @@ int cp_file_from(const char *file_from, const char *file_to)
 		n_written = write(fd_to, buffer, n_read);
 		if (n_written == -1 || n_written != n_read)
 		{
+			dprintf(2, "Error: Can't write to %s\n", file_to);
 			close(fd_from);
 			close(fd_to);
 			exit(99);
