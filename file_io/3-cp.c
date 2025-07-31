@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 /**
  * main - check the code
  *@argc: is a number of argument
@@ -17,10 +20,6 @@ int main(int argc, char *argv[])
 	cp_file_from(argv[1], argv[2]);
 	return (0);
 }
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
 /**
  * cp_file_from - copy file_from to file_to
  * @file_from: source file
@@ -66,7 +65,5 @@ int cp_file_from(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-	close(fd_from);
-	close(fd_to);
 	return (0);
 }
