@@ -38,7 +38,7 @@ int cp_file_from(const char *file_from, const char *file_to)
 	int fd_from, fd_to, n_read, n_written;
 	char buffer[1024];
 
-	fd_from = open(file_from, O_RDONLY);
+	fd_from = open(file_from, O_RDONLY, 0664);
 
 	if (fd_from == -1)
 	{
