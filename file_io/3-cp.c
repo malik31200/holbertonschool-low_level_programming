@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 			exit(97);
 		}
 		res = cp_file_from(argv[1], argv[2]);
+		printf("-> %i)\n", res);
 		return (0);
 	}
 }
