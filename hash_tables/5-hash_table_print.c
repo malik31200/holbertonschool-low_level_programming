@@ -11,14 +11,14 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int index;
 	hash_node_t *node;
 
+	if (ht == NULL)
+	{
+		return;
+	}
+
 	printf("{");
 	first = 1;
 
-	if (ht == NULL)
-	{
-		printf("{}");
-		return;
-	}
 	for (index = 0; index < ht->size; index++)
 	{
 		node = ht->array[index];
