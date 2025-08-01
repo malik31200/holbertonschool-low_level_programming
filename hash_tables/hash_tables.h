@@ -39,5 +39,6 @@ int _strcmp(const char *s1, const char *s2);
 char *_strdup(const char *str);
 int _strlen(const char *s);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
 
 #endif
