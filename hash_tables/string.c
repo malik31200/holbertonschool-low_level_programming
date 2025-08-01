@@ -17,6 +17,7 @@ int _strcmp(const char *s1, const char *s2)
 		{
 			return (s1[i] - s2[i]);
 		}
+	i++;
 	}
 	return (s1[i] - s2[i]);
 }
@@ -54,7 +55,7 @@ char *_strdup(const char *str)
  *@s: is a pointer
  *Return: void
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int count;
 

@@ -37,6 +37,6 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int _strcmp(const char *s1, const char *s2);
 char *_strdup(const char *str);
-int _strlen(char *s);
+int _strlen(const char *s);
 
 #endif
