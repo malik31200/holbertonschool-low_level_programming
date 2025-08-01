@@ -13,6 +13,11 @@ void hash_table_print(const hash_table_t *ht)
 
 	printf("{");
 	first = 1;
+
+	if (ht == NULL)
+	{
+		return;
+	}
 	for (index = 0; index < ht->size; index++)
 	{
 		node = ht->array[index];
@@ -27,6 +32,5 @@ void hash_table_print(const hash_table_t *ht)
 			node = node->next;
 		}
 	}
-	first = 0;
 	printf("}\n");
 }
